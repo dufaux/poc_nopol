@@ -22,7 +22,7 @@ Usage: java -jar pocnopol.jar
         java files where new tests will be added. (ex: src/test) default:srcTestFolder
     [-newTestFolder <newTestFolder>] 
         location of news tests files to add
-    [-classPath <classPath>]
+    [-dependencies <dependencies>]
         all other class or jar required for the news tests. cpClassFolde & cpTestFolder are not necessary. (ex: junit, hamcrest, evosuite)
 ```
 
@@ -35,7 +35,7 @@ java -jar pocnopol.jar \
 -srcTestFolder bugs/Math_85/src/test \
 -destSrcTestFolder bugs/Math_85/src/test \
 -newTestFolder evotests/Math/85/Math/evosuite-branch/0 \
--classPath bugs/Math_85/target/classes:evosuite-standalone-runtime-1.0.2-SNAPSHOT.jar:junit-4.8.2.jar:hamcrest-core-1.3.jar
+-dependencies evosuite-standalone-runtime-1.0.2-SNAPSHOT.jar:junit-4.8.2.jar:hamcrest-core-1.3.jar
 
 
 -projectFolder bugs/Math_85 -cpClassFolder bugs/Math_85/target/classes -cpTestFolder bugs/Math_85/target/test-classes -srcClassFolder bugs/Math_85/src/java -srcTestFolder bugs/Math_85/src/test -destSrcTestFolder bugs/Math_85/src/test -newTestFolder generatededed -classPath bugs/Math_85/target/classes:evosuite-standalone-runtime-1.0.3-SNAPSHOT.jar:junit-4.8.2.jar:hamcrest-core-1.3.jar
