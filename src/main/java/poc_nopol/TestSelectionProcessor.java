@@ -40,7 +40,7 @@ public class TestSelectionProcessor extends AbstractProcessor<CtMethod>{
 			return; //keep this one
 		}
 		
-		if(element.getSignature().equals(methodTested.getSignature())){
+		if(methodTested != null && element.getSignature().equals(methodTested.getSignature())){
 			//System.out.println("keep '"+element.getSignature()+"'");
 			return; //keep this one
 		}
